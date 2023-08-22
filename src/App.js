@@ -24,13 +24,13 @@ function App() {
 					<Nav />
 
 					<Routes>
-						<Route path='/' element={<Home />} />
-						<Route path='/market' element={<Market />} />
-						<Route path='/bundles' element={<Bundles />} />
-						<Route path='/choice' element={<Choice />} />
-						<Route path='/wallet' element={<Wallet />} />
-						<Route path='/settings' element={<Settings />} />
-						<Route path='/support' element={<Support />} />
+						<Route path='./' element={<Home />} />
+						<Route path='./market' element={<Market />} />
+						<Route path='./bundles' element={<Bundles />} />
+						<Route path='./choice' element={<Choice />} />
+						<Route path='./wallet' element={<Wallet />} />
+						<Route path='./settings' element={<Settings />} />
+						<Route path='./support' element={<Support />} />
 					</Routes>
 
 					<Footer />
