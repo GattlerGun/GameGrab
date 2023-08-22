@@ -58,12 +58,12 @@ const Nav = () => {
         <nav className='nav'>
             <div className='container'>
                 <div className='nav__inner'>
-                    <NavLink to={'/'} className='logo'>
+                    <NavLink to={'/GameGrab/home'} className='logo'>
                         <img src={logo} alt='logo' />
                     </NavLink>
                     <ul className='nav__list'>
                         <li ref={ref} className='nav__item'>
-                            <NavLink className={setActive} to={'/GameGrab'}>
+                            <NavLink className={setActive} to={'/GameGrab/home'}>
                                 <HomeIco className='nav__icon' alt='Home icon' />
                                 <p>Home</p>
                             </NavLink>

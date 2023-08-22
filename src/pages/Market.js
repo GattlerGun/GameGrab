@@ -6,6 +6,7 @@ import Game from "./../components/games/Game";
 
 import "./styles/market.scss"
 import { GameList } from "../components/games/GameList";
+import AsideFilters from "../components/asideFilters/AsideFilters";
 
 const Market = () => {
     return (
@@ -80,11 +81,7 @@ const Market = () => {
                     </div>
                 </div>
             </div>
-            <aside className="market__filters-box">
-                <div className="market__filters-content">
-                    <h2 className="filters__title title">Filters</h2>
-                </div>
-            </aside>
+            <AsideFilters />
         </section>
     );
 }

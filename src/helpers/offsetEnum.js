@@ -1,5 +1,5 @@
 const pathnames = {
-    HOME: '/GameGrab',
+    HOME: '/GameGrab/home',
     MARKET: '/GameGrab/market',
     CHOICE: '/GameGrab/choice',
     BUNDLES: '/GameGrab/bundles',

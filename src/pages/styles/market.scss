@@ -4,12 +4,11 @@
 //------------------------MARKET------------------------------------
 
 .market {
-
     position: relative;
     z-index: 1;
     margin-top: 7px;
     background: $bg-color;
-    padding: 70px 0;
+    padding: 70px 0 70px 150px;
     border-radius: 24px;
     min-height: 100dvh;
     box-shadow: 0 10px 4px -4px rgba(#000300, 0.2);
@@ -173,4 +172,10 @@
         position: relative;
         width: 100%;
     }
+}
+
+@media (max-width: 1520px) {
+    .market {
+        padding-left: 0;
+    }    
 }

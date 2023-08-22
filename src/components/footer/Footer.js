@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='container'>
                 <div className='footer__inner'>
                     <div className='footer__cell'>
-                        <NavLink className='footer__link'>
+                        <NavLink to={"/GameGrab/home"} className='footer__link'>
                             <img className='footer__logo logo' src={logo} alt='logo' />
                         </NavLink>
                         <p className='footer__text'>

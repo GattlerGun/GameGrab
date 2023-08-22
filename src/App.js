@@ -18,13 +18,13 @@ function App() {
 	return (
 		<div className="App">
 			<div className="wrapper">
-				Alpha-test
+				Alpha-test 0.01
 				<Router>
 					<ScrollToTop />
 					<Nav />
 
 					<Routes>
-						<Route path='/GameGrab/' element={<Home />} />
+						<Route path='/GameGrab/home' element={<Home />} />
 						<Route path='/GameGrab/market' element={<Market />} />
 						<Route path='/GameGrab/bundles' element={<Bundles />} />
 						<Route path='/GameGrab/choice' element={<Choice />} />
