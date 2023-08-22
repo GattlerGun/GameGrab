@@ -1,11 +1,11 @@
 const pathnames = {
-    HOME: '/',
-    MARKET: '/market',
-    CHOICE: '/choice',
-    BUNDLES: '/bundles',
-    WALLET: '/wallet',
-    SUPPORT: '/support',
-    SETTINGS: '/settings'
+    HOME: '/GameGrab',
+    MARKET: '/GameGrab/market',
+    CHOICE: '/GameGrab/choice',
+    BUNDLES: '/GameGrab/bundles',
+    WALLET: '/GameGrab/wallet',
+    SUPPORT: '/GameGrab/support',
+    SETTINGS: '/GameGrab/settings'
 }
 
 export default pathnames

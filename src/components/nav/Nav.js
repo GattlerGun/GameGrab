@@ -63,43 +63,43 @@ const Nav = () => {
                     </NavLink>
                     <ul className='nav__list'>
                         <li ref={ref} className='nav__item'>
-                            <NavLink className={setActive} to={'/'}>
+                            <NavLink className={setActive} to={'/GameGrab'}>
                                 <HomeIco className='nav__icon' alt='Home icon' />
                                 <p>Home</p>
                             </NavLink>
                         </li>
                         <li className='nav__item'>
-                            <NavLink className={setActive} to={'/market'}>
+                            <NavLink className={setActive} to={'/GameGrab/market'}>
                                 <MarketIco className='nav__icon' alt='Market icon' />
                                 <p>Market</p>
                             </NavLink>
                         </li>
                         <li className='nav__item'>
-                            <NavLink className={setActive} to={'/bundles'}>
+                            <NavLink className={setActive} to={'/GameGrab/bundles'}>
                                 <BundlesIco className='nav__icon' alt='Bundles icon' />
                                 <p>Bundles</p>
                             </NavLink>
                         </li>
                         <li className='nav__item'>
-                            <NavLink className={setActive} to={'/choice'}>
+                            <NavLink className={setActive} to={'/GameGrab/choice'}>
                                 <ChoiceIco className='nav__icon' alt='Choice icon' />
                                 <p>Choice</p>
                             </NavLink>
                         </li>
                         <li className='nav__item'>
-                            <NavLink className={setActive} to={'/wallet'}>
+                            <NavLink className={setActive} to={'/GameGrab/wallet'}>
                                 <WalletIco className='nav__icon' alt='Wallet icon' />
                                 <p>Wallet</p>
                             </NavLink>
                         </li>
                         <li className='nav__item'>
-                            <NavLink className={setActive} to={'/settings'}>
+                            <NavLink className={setActive} to={'/GameGrab/settings'}>
                                 <SettingsIco className='nav__icon' alt='Settings icon' />
                                 <p>Settings</p>
                             </NavLink>
                         </li>
                         <li className='nav__item'>
-                            <NavLink className={setActive} to={'/support'}>
+                            <NavLink className={setActive} to={'/GameGrab/support'}>
                                 <SupportIco className='nav__icon' alt='Support icon' />
                                 <p>Support</p>
                             </NavLink>
