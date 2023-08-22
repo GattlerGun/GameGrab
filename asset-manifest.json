@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/GameGrab/static/css/main.e7838a0f.css",
+    "main.js": "/GameGrab/static/js/main.07d1d6c9.js",
+    "static/js/787.1e5b2fa9.chunk.js": "/GameGrab/static/js/787.1e5b2fa9.chunk.js",
+    "static/media/head__img.jpg": "/GameGrab/static/media/head__img.d1c55ed5b66a5e5a7c44.jpg",
+    "static/media/logo.svg": "/GameGrab/static/media/logo.70f1ee47d0c9107c1979d4a1b456eed6.svg",
+    "static/media/settings-ico.svg": "/GameGrab/static/media/settings-ico.8a9b5c5c7ff230c01cf3e80a71bd2b3f.svg",
+    "static/media/catalog-ico.svg": "/GameGrab/static/media/catalog-ico.84d95d6c027f35dd73bc58e33e80b543.svg",
+    "static/media/bundles-ico.svg": "/GameGrab/static/media/bundles-ico.2e35419953273f3083438eceb425f7b0.svg",
+    "static/media/busket-ico.svg": "/GameGrab/static/media/busket-ico.b9dce68c41445430c1c046ea111b7b64.svg",
+    "static/media/support-ico.svg": "/GameGrab/static/media/support-ico.9b485fd0b2f9ddc09d8b4db49d4c6e2c.svg",
+    "static/media/home-ico.svg": "/GameGrab/static/media/home-ico.2365d5527cab07b6a8af9770307d6086.svg",
+    "static/media/wallet-ico.svg": "/GameGrab/static/media/wallet-ico.217640b11ebd80df4fb1d4519b63df09.svg",
+    "static/media/arrow-slider-left.svg": "/GameGrab/static/media/arrow-slider-left.df9b0fec57922eed8594813c255b656a.svg",
+    "static/media/arrow-slider-right.svg": "/GameGrab/static/media/arrow-slider-right.6b26128d352ff6c1a0d5a0186ae28e9f.svg",
+    "index.html": "/GameGrab/index.html",
+    "main.e7838a0f.css.map": "/GameGrab/static/css/main.e7838a0f.css.map",
+    "main.07d1d6c9.js.map": "/GameGrab/static/js/main.07d1d6c9.js.map",
+    "787.1e5b2fa9.chunk.js.map": "/GameGrab/static/js/787.1e5b2fa9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7838a0f.css",
+    "static/js/main.07d1d6c9.js"
+  ]
+}
