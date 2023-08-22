@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import ScrollToTop from './Utils/ScrollToTop';
+import Nav from './components/nav/Nav';
+import Home from './pages/Home';
+import Market from './pages/Market';
+import Bundles from './pages/Bundles';
+import Choice from './pages/Choice';
+import Wallet from './pages/Wallet';
+import Settings from './pages/Settings';
+import Support from './pages/Support';
+import Footer from './components/footer/Footer';
+
+import './styles/style.scss';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className="wrapper">
+				<Router>
+					<ScrollToTop />
+					<Nav />
+
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/market' element={<Market />} />
+						<Route path='/bundles' element={<Bundles />} />
+						<Route path='/choice' element={<Choice />} />
+						<Route path='/wallet' element={<Wallet />} />
+						<Route path='/settings' element={<Settings />} />
+						<Route path='/support' element={<Support />} />
+					</Routes>
+
+					<Footer />
+
+				</Router>
+			</div>
+		</div>
+	);
 }
 
 export default App;

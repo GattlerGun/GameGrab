@@ -1,0 +1,340 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+//------------------------HOME------------------------------------
+//------------------------HOME------------------------------------
+
+.featured {
+    padding: 70px 0;
+    background: $bg-color;
+    &__inner {
+        position: relative;
+    }
+    &__slide {
+        min-width: 100%;
+        min-height: 100%;
+        width: 30%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .games__item.shadow {
+            box-shadow: none;
+        }
+        & .games__item:hover.shadow {
+            box-shadow: none;
+        }
+    }
+    &__link {
+        position: relative;
+        height: 100%;
+        & .games__item {
+            max-width: 400px;
+            list-style-type: none;
+        }
+    }
+}
+
+.bundles {
+    padding: 100px 0;
+    background: $bg-color;
+    &__inner {
+        position: relative;
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        gap: 30px 30px;
+        margin-bottom: 30px;
+    }
+    &__item {
+        border-radius: 24px;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 10;
+        align-items: center;
+        justify-content: center;
+        bottom: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+    &__info-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    &__games {
+        margin-bottom: 20px;
+    }
+    &__info-list {
+        display: flex;
+        gap: 20px 20px;
+    }
+    &__info-item {
+        position: relative;
+    }
+    &__info-item::after {
+        content: "";
+        position: absolute;
+        background: #111;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 0 #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -13.5px;
+    }
+    &__info-item:last-child::after {
+        content: none;
+    }
+    &__img {
+        transition: all 0.5s;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__text-box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: $bg-list;
+        padding: 10px 15px;
+        transition: all 0.5s;
+        height: 100%;
+    }
+    &__text {
+        margin-top: 10px;
+        max-width: 215px;
+        line-height: 1.4;
+        height: fit-content;
+    }
+    &__time {
+        height: fit-content;
+        border: 2px solid #666;
+        background: #333;
+        border-radius: 24px;
+        padding: 10px 15px;
+        transition: all 0.5s;
+    }
+    &__link-more {
+        position: absolute;
+        right: 0;
+        border-bottom: 1px solid transparent;
+        transition: all 0.5s;
+        &:hover {
+            color: $accent-color;
+            border-bottom: 1px solid $accent-color;
+        }
+    }
+    &__link:hover {
+        & .bundles__info {
+            opacity: 1;
+            visibility: visible;
+        }
+        & .bundles__img {
+            filter: blur(10px) grayscale(0.5);
+            overflow: hidden;
+        }
+        & .bundles__text-box {
+            background: #555;
+        }
+        & .bundles__time {
+            background: $bg-list;
+        }
+        & .shadow {
+            box-shadow: 0 10px 50px 0 #266b2b;
+        }
+    }
+}
+.games {
+    padding: 100px 0;
+    background: $bg-color;
+    &__inner {
+        position: relative;
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        gap: 30px 30px;
+        margin-bottom: 30px;
+    }
+    &__link {
+        position: relative;
+        transition: all 0.5s;
+    }
+    &__item {
+        border-radius: 24px;
+        overflow: hidden;
+        height: 100%;
+    }
+    &__item:hover {
+        .games__game-title {
+            color: $accent-color;
+            border-bottom: 2px solid $accent-color;
+        }
+    }
+    &__img img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+    }
+    &__sale-box {
+        position: relative;
+    }
+    &__popup {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        right: 0;
+        left: -54%;
+        margin: 0 auto;
+        width: 225px;
+        bottom: 125%;
+        background: #333;
+        border-radius: 24px;
+        color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+        &::after {
+            content: "▼";
+            position: absolute;
+            color: #333;
+            width: 20px;
+            font-size: 20px;
+            bottom: -13%;
+            left: 0;
+            right: 10%;
+            margin: 0 auto;
+        }
+    }
+    &__title-box {
+        background: #555;
+        border-radius: 24px 24px 0 0;
+        padding: 10px 10px 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__popup-title {
+        font-size: 22px;
+        width: 100%;
+    }
+    &__popup-text-box {
+        padding: 10px;
+    }
+    &__popup-text {
+        margin-bottom: 10px;
+    }
+    &__popup-discount s {
+        color: #666;
+    }
+    &__symbol {
+        color: $accent-color;
+    }
+    &__text-box {
+        background: #fff;
+        padding: 15px;
+        display: flex;
+        max-height: fit-content;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &__game-title {
+        max-width: 190px;
+        margin-top: 10px;
+        height: fit-content;
+        border-bottom: 2px solid transparent;
+        transition: all 0.5s;
+    }
+    &__price {
+        display: flex;
+        gap: 10px;
+        height: fit-content;
+        font-size: 12px;
+    }
+    &__sale {
+        height: fit-content;
+        border: 2px solid #266b2b;
+        background: $accent-color;
+        border-radius: 24px;
+        padding: 10px 15px;
+        transition: all 0.5s;
+        cursor: auto;
+    }
+    &__pay-btn {
+        height: fit-content;
+        border: 2px solid #666;
+        background: $bg-color;
+        border-radius: 24px;
+        padding: 10px 15px;
+        transition: all 0.5s;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            content: "🛒 Add";
+            text-align: center;
+            display: block;
+            position: absolute;
+            color: #fff;
+            font-size: 16px;
+            padding: 7px;
+            left: 0;
+            top: 0;
+            background: $accent-color;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s;
+        }
+        &:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__link-more {
+        position: absolute;
+        right: 0;
+        border-bottom: 1px solid transparent;
+        transition: all 0.5s;
+        &:hover {
+            color: $accent-color;
+            border-bottom: 1px solid $accent-color;
+        }
+    }
+    &__item.shadow:hover {
+        box-shadow: 0 10px 50px 0 #266b2b;
+    }
+    &__sale-box:hover {
+        .games__popup {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+@import "media";

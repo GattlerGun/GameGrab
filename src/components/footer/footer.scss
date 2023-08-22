@@ -1,0 +1,31 @@
+@import './../../styles/vars';
+
+.footer {
+    background: $bg-list;
+    margin-top: -20px;
+    &__inner {
+        padding: 70px 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;
+    }
+    &__cell {
+        max-width: 500px;
+        color: #111;
+    }
+    &__cell:last-child {
+        align-self: flex-end;
+    }
+    &__logo {
+        margin-bottom: 20px;
+    }
+    &__text {
+        margin-bottom: 40px;
+    }
+    &__link {
+        color: $accent-color;
+        cursor: pointer;
+    }
+}
