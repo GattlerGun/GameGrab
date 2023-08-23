@@ -24,13 +24,13 @@ function App() {
 					<Nav />
 
 					<Routes>
-						<Route path='/GameGrab/home' element={<Home />} />
-						<Route path='/GameGrab/market' element={<Market />} />
-						<Route path='/GameGrab/bundles' element={<Bundles />} />
-						<Route path='/GameGrab/choice' element={<Choice />} />
-						<Route path='/GameGrab/wallet' element={<Wallet />} />
-						<Route path='/GameGrab/settings' element={<Settings />} />
-						<Route path='/GameGrab/support' element={<Support />} />
+						<Route path='/' element={<Home />} />
+						<Route path='/market' element={<Market />} />
+						<Route path='/bundles' element={<Bundles />} />
+						<Route path='/choice' element={<Choice />} />
+						<Route path='/wallet' element={<Wallet />} />
+						<Route path='/settings' element={<Settings />} />
+						<Route path='/support' element={<Support />} />
 					</Routes>
 
 					<Footer />
