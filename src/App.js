@@ -19,7 +19,7 @@ function App() {
 		<div className="App">
 			<div className="wrapper">
 				Alpha-test 0.01
-				<Router>
+				<Router basename="/GameGrab">
 					<ScrollToTop />
 					<Nav />
 
