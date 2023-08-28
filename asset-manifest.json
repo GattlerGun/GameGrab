@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GameGrab/static/css/main.a97def41.css",
-    "main.js": "/GameGrab/static/js/main.c9571d93.js",
+    "main.js": "/GameGrab/static/js/main.8a10c938.js",
     "static/js/787.1e5b2fa9.chunk.js": "/GameGrab/static/js/787.1e5b2fa9.chunk.js",
     "static/media/head__img.jpg": "/GameGrab/static/media/head__img.d1c55ed5b66a5e5a7c44.jpg",
     "static/media/logo.svg": "/GameGrab/static/media/logo.70f1ee47d0c9107c1979d4a1b456eed6.svg",
@@ -15,11 +15,11 @@
     "static/media/arrow-slider-right.svg": "/GameGrab/static/media/arrow-slider-right.6b26128d352ff6c1a0d5a0186ae28e9f.svg",
     "index.html": "/GameGrab/index.html",
     "main.a97def41.css.map": "/GameGrab/static/css/main.a97def41.css.map",
-    "main.c9571d93.js.map": "/GameGrab/static/js/main.c9571d93.js.map",
+    "main.8a10c938.js.map": "/GameGrab/static/js/main.8a10c938.js.map",
     "787.1e5b2fa9.chunk.js.map": "/GameGrab/static/js/787.1e5b2fa9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a97def41.css",
-    "static/js/main.c9571d93.js"
+    "static/js/main.8a10c938.js"
   ]
 }
