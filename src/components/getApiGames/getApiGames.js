@@ -7,7 +7,7 @@ const GetApiGames = () => {
     
     useEffect(() => {
         fetch(
-            "/api/games",
+            "v4/games",
             {
                 method: 'POST',
                 headers: {
