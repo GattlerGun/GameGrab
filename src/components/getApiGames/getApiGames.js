@@ -1,11 +1,30 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 
 const GetApiGames = () => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
-    
+
     useEffect(() => {
+        axios.post('v4/games',
+            {
+                headers: {
+                    'Client-ID': 'x7mzs795l58fx2225bo3qmuols8gbv',
+                    'Authorization': 'Bearer 968a6c7aan5360kynjuxnlfk5to1a1',
+                }
+            })
+            .then(response => response.json())
+            .then(
+                (result) => {
+                    setIsLoaded(true);
+                    setItems(result);
+                },
+                (error) => {
+                    setIsLoaded(true);
+                    setError(error);
+                }
+            )
         fetch(
             "v4/games",
             {
