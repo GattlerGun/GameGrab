@@ -4,14 +4,15 @@ import './asideFilters.scss'
 
 const AsideFilters = () => {
     const [price, setPrice] = useState("");
-    const [translateFilter, setTranslateFilter] = useState(0);
+    const [translateFilter, setTranslateFilter] = useState(100);
     const [translateBtn, setTranslateBtn] = useState(0);
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const slider = useRef(null);
 
     useEffect(() => {
-        setIsOpen(true); setTranslateFilter(0)
-        if (window.innerWidth < 1520) {setIsOpen(false); setTranslateFilter(100) }
+        if (window.innerWidth > 1520) {
+            setIsOpen(true)
+        }
         if (isOpen) {
             setTranslateFilter(0);
             setTranslateBtn(401);
@@ -19,7 +20,7 @@ const AsideFilters = () => {
             setTranslateFilter(100);
             setTranslateBtn(0);
         }
-    }, [isOpen, translateFilter, translateBtn])
+    }, [isOpen])
 
     useEffect(() => {
         if (slider.current !== null) {
@@ -53,11 +54,11 @@ const AsideFilters = () => {
                     </div>
                 </div>
             </div>
-            <button className={`filters__open-btn ${isOpen ? "filters__open-btn--open" : ""}`} onClick={() => { setIsOpen(!isOpen) }}
+            <button className="filters__open-btn" onClick={() => { setIsOpen(!isOpen) }}
                 style={{
                     transform: `translate(${translateBtn}%)`
                 }}>
-                <img className='filters__open-img' src={openBtn} alt='Filter open button' />
+                <img className={`filters__open-img ${isOpen ? "filters__open-img--open" : ""}`} src={openBtn} alt='Filter open button' />
             </button>
         </aside>
 

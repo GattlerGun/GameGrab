@@ -58,6 +58,12 @@
             left: -53%;
         }
     }
+    &__open-img {
+        transition: all .5s;
+        &--open {
+            transform: scale(-1);
+        }
+    }
 }
 
 @media (max-width: 1520px) {

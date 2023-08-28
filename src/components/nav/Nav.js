@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from 'react-router-dom'
+import { useEffect, useRef, useState } from 'react';
 
 import logo from './../../images/svg/logo.svg';
 import { ReactComponent as HomeIco } from './../../images/svg/home-ico.svg';
@@ -7,9 +8,7 @@ import { ReactComponent as MarketIco} from './../../images/svg/busket-ico.svg';
 import { ReactComponent as BundlesIco} from './../../images/svg/bundles-ico.svg';
 import { ReactComponent as WalletIco } from './../../images/svg/wallet-ico.svg';
 import { ReactComponent as SettingsIco } from './../../images/svg/settings-ico.svg';
-import { ReactComponent as SupportIco } from './../../images/svg/support-ico.svg';
 import './nav.scss';
-import { useEffect, useRef, useState } from 'react';
 import pathnames from '../../helpers/offsetEnum';
 
 
@@ -45,8 +44,6 @@ const Nav = () => {
                         return setOffset(startOffset * 4);
                     case pathnames.SETTINGS:
                         return setOffset(startOffset * 5);
-                    case pathnames.SUPPORT:
-                        return setOffset(startOffset * 6);
                     default: ;
                 }
             }, 100)
@@ -54,6 +51,7 @@ const Nav = () => {
         }
         return normalLink
     }
+    console.log(startOffset)
     return (
         <nav className='nav'>
             <div className='container'>
@@ -96,12 +94,6 @@ const Nav = () => {
                             <NavLink className={setActive} to={'/settings'}>
                                 <SettingsIco className='nav__icon' alt='Settings icon' />
                                 <p>Settings</p>
-                            </NavLink>
-                        </li>
-                        <li className='nav__item'>
-                            <NavLink className={setActive} to={'/support'}>
-                                <SupportIco className='nav__icon' alt='Support icon' />
-                                <p>Support</p>
                             </NavLink>
                         </li>
                         <div className='nav__indicator'

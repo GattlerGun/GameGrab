@@ -8,7 +8,6 @@ import Bundles from './pages/Bundles';
 import Choice from './pages/Choice';
 import Wallet from './pages/Wallet';
 import Settings from './pages/Settings';
-import Support from './pages/Support';
 import Footer from './components/footer/Footer';
 
 import './styles/style.scss';
@@ -30,7 +29,6 @@ function App() {
 						<Route path='/choice' element={<Choice />} />
 						<Route path='/wallet' element={<Wallet />} />
 						<Route path='/settings' element={<Settings />} />
-						<Route path='/support' element={<Support />} />
 					</Routes>
 
 					<Footer />
