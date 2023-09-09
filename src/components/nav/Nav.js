@@ -1,6 +1,8 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react';
 
+import pathnames from '../../helpers/offsetEnum';
+
 import logo from './../../images/svg/logo.svg';
 import { ReactComponent as HomeIco } from './../../images/svg/home-ico.svg';
 import { ReactComponent as ChoiceIco } from './../../images/svg/catalog-ico.svg';
@@ -9,7 +11,6 @@ import { ReactComponent as BundlesIco} from './../../images/svg/bundles-ico.svg'
 import { ReactComponent as WalletIco } from './../../images/svg/wallet-ico.svg';
 import { ReactComponent as SettingsIco } from './../../images/svg/settings-ico.svg';
 import './nav.scss';
-import pathnames from '../../helpers/offsetEnum';
 
 
 const Nav = () => {
